@@ -1,5 +1,5 @@
 # learning_log
-学習したことを記録するためのWebサイトです。Pythonのdjango, djangoでデフォルトのSQLite, HTML, CSS を用いて作成しています。
+学習したことを記録するためのWebサイトです。Pythonのdjango, djangoでデフォルトのSQLite, HTML, CSS, bootstrap4 を用いて作成しています。
 ユーザー登録機能、権限管理、パスワードのハッシュ化、フォーム入力値のバリデーション
 
 ## 追加したい機能
