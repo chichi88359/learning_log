@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 import environ
 from decouple import config
-from dj_database_url import parse as dburl
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -87,11 +87,11 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 default_dburl = "sqlite:///" + str(BASE_DIR / "db.sqlite3")
 
 DATABASES = {
-    "default": config("DATABASE_URL", default=default_dburl, cast=dburl),
+    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
 }
 
 STATIC_URL = "static/"
-STATIC_ROOT = str(BASE_DIR / "staticfiles")
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
