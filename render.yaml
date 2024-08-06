@@ -7,7 +7,7 @@ databases:
 
 services:
   - type: web
-    name: django_render
+    name: study_logs
     env: python
     region: singapore
     buildCommand: "./build.sh"
