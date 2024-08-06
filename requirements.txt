@@ -5,4 +5,12 @@ django-bootstrap4==24.3
 soupsieve==2.5
 sqlparse==0.4.4
 typing_extensions==4.8.0
+
+django==5.0.4
+dj-database-url
+dj-static
+python-decouple
+django-environ
+gunicorn
+psycopg2-binary
 whitenoise
