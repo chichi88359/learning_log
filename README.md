@@ -1,5 +1,6 @@
 # learning_log
 https://study-logs.onrender.com
+
 学習したことを記録するためのWebサイトです。Pythonのdjango, djangoでデフォルトのSQLite, HTML, CSS, bootstrap4 を用いて作成しています。
 ユーザー登録機能、権限管理、パスワードのハッシュ化、フォーム入力値のバリデーション
 
